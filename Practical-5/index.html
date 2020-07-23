@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical - 5</title>
+    <style>
+        body {
+            width: 100%;
+            overflow: hidden;
+            background-color: rgb(58, 150, 179);
+            font-family: Calibri, sans-serif;
+        }
+        .container {
+            max-width: 100%;
+            width: 90%;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 1em auto;
+            text-align: center;
+            color: #fff;
+        }
+        .navbar {
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .mainimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3 {
+            color: rgb(66, 23, 7);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="./img/navbar.png" alt="navbar" class="navbar" usemap="#navmap"  width="1350" height="80">
+        <h1>Introduction to Front-End Technologies</h1>
+        
+        <map name="navmap">
+            <area shape="rect" coords="30,18,156,60" href="../index.html" alt="Home">
+            <area shape="rect" coords="186,18,377,60" href="../Practical-1/index.html" alt="Practical1">
+            <area shape="rect" coords="421,18,613,60" href="../Practical-2/index.html" alt="Practical2">
+            <area shape="rect" coords="657,18,848,60" href="../Practical-3/index.html" alt="Practical3">
+            <area shape="rect" coords="892,18,1084,61" href="../Practical-4/index.html" alt="Practical4">
+            <area shape="rect" coords="1128,18,1320,62" href="#" alt="Practical5">
+        </map>
+
+
+        <img src="./img/mainmap.jpg" alt="center image" class="mainimg" usemap="#mainmap" width="400" height="350">
+        <map name="mainmap">
+            <area shape="rect" coords="19,8,172,166" href="./html.html" alt="HTML">
+            <area shape="circle" coords="290,90,83" href="./css.html" alt="CSS">
+            <area shape="rect" coords="23,196,170,337" href="./js.html" alt="JS">
+            <area shape="poly" coords="231,223,288,203,347,223,338,300,288,328,239,301,231,223" href="./bootstrap.html" alt="Bootstrap">
+        </map>
+        <h3>Click on any part of the logo to know more about these technologies.</h3>
+    </div>
+</body>
+</html>
