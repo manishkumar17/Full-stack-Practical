@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-6</title>
+    <style>
+        *  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: cyan;
+        }
+        .container{
+            width: 100%;
+        }
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+            font-size: 2.4rem;
+            width: 100%;
+            color: white;
+        }
+        h4 {
+            text-align: center;
+            margin: 10px;
+        }
+        .main-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            float: left;
+            width: 22%; 
+            background-color: white;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            min-width: 250px;
+            box-shadow: black 0 5px 20px -10px;
+        }
+        .box img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .box a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .box p {
+            text-align: left;
+            margin: 10px;
+        }
+        .box a:hover {
+            background-color: blueviolet;
+            transition: all .5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Practical-6 : create following layout using css layout properties</h1>
+        <div class="main-box">
+        <div class="box">
+            <img src="./img/html.png" alt="html image">
+            <h4>Introduction to HTML</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias quae 
+                quibusdam repellendus praesentium temporibus sed, ratione ipsa
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, molestias?
+            </p>
+            <a href="../Practical-5/html.html">Read more</a>
+        </div>
+        <div class="box">
+            <img src="./img/css.png" alt="css image">
+            <h4>Introduction to CSS</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias quae 
+                quibusdam repellendus praesentium temporibus sed, ratione ipsa
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, molestias?
+            </p>
+            <a href="../Practical-5/css.html">Read more</a>
+        </div>
+        <div class="box">
+            <img src="./img/bootstrap.png" alt="bootstrap image">
+            <h4>Introduction to Bootstrap</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias quae 
+                quibusdam repellendus praesentium temporibus sed, ratione ipsa
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, molestias?
+            </p>
+            <a href="../Practical-5/bootstrap.html">Read more</a>
+        </div>
+        <div class="box">
+            <img src="./img/js.png" alt="js image">
+            <h4>Introduction to JS</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias quae 
+                quibusdam repellendus praesentium temporibus sed, ratione ipsa
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, molestias?
+            </p>
+            <a href="../Practical-5/js.html">Read more</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
