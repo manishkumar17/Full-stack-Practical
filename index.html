@@ -1,43 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        body{
-            background-color: #000;
-            color: whitesmoke;
+        * {
+            margin: 0vh;
+            padding: 0;
         }
-        a {
+        table {
+            width: 90%;
+            border-radius: 8px;
+            margin: 50px auto;
+            border: 2px solid #34495e;
+            border-spacing: 0;
+        }
+        tr,td,th{
+            padding: 12px;
+            text-align: left; 
+            border-bottom: 1px solid rgba(131, 131, 131,0.3);
+        }
+        td:nth-child(2){
+            width: 60%;
+            height: 30px;
+        }
+        td:nth-child(4){
+            color: brown;
+            font-weight: 500;
+        }
+        tr:hover{
+            background: rgba(131, 131, 131,0.3);
+        }
+        tr:first-child th{
+            background: #34495e;
+            color: white;
+            border-radius: 8px 8px 0px 0;
+            text-align: center;
+        }
+        .fa{
+            font-size: 20px;
+        }
+        i:hover{
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        i:first-child{
+            margin-right: 15px;
+        }
+        a{
             text-decoration: none;
-            padding: .3em 2em;
-            color: whitesmoke;
-            background-color: transparent;
-            border: 1px solid darkcyan;
-            border-radius: 5px;
-            transition: background-color .4s ease-in-out;
-        }
-        a:hover{
-            background-color: red;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Fullstack Course</h1>
-    <h2>About Course</h2>
-    <p>Front-end web development is everything involved in programming the user interface of a web application. Typically it refers to the Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript portion of website production as opposed to the database or server-side programming. It encompasses everything from building a simple page of HTML text to creating complex, responsive HTML5 websites designed to be accessed via various different browsers, devices and screen sizes.</p>
-    <h2>List of Practicals</h2>
-    <p>1. Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment. <a href="./Practical-1/index.html">Practical-1</a></p>
-    <p>2. Live your First Web-page on Git-Hub. <a href="./Practical-2/index.html">Practical-2</a></p>
-    <p>3. Create a web page showing a basic HTML structure using character Entities and span Tag. <a href="./Practical-3/index.html">Practical-3</a></p>
-    <p>4. Create a website having list of all practicals and their individual practical Page links. <a href="./Practical-4/index.html">Practical-4</a></p>
-    <p>5. Create a Web-Page showing the use of Image-Map in the Web Application. <a href="./Practical-5/index.html">Practical-5</a></p>
-    <p>6. Create following layout using css layout properties. <a href="./Practical-6/index.html">Practical-6</a></p>
-    <p>7. Create a Web Page Layout using div tags. <a href="./Practical-7/index.html">Practical-7</a></p>
-    <p>8. Create a Web Page having Fixed Navigation Bar with the given content.<a href="./Practical-8/index.html">Practical-8</a></p>
-    <p>9. Create a Responsive Web Layout with Responsive Navigation Bar.<a href="./Practical-9/index.html">Practical-9</a></p>
-    <p>10. Create a Responsive Side-Bar Navigation Menu.<a href="./Practical-10/index.html">Practical-10</a></p>
-    <p>11. Create a Table that represent Live Practical Book Records .<a href="./Practical-11/index.html">Practical-11</a></p>
+    <table>
+        <tr>
+            <th colspan="5">Fullstack Live Practical Book</th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>Practical Name</th>
+            <th>Link</th>
+            <th>Status</th>
+            <th>Tools</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment.</td>
+            <td><a href="../Practical-1/index.html">Practical-1</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Live your First Web-page on Git-Hub.</td>
+            <td><a href="../Practical-2/index.html">Practical-2</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Create a web page showing a basic HTML structure using character Entities and span Tag.</td>
+            <td><a href="../Practical-3/index.html">Practical-3</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Create a website having list of all practicals and their individual practical Page links.</td>
+            <td><a href="../Practical-4/index.html">Practical-4</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Create a Web-Page showing the use of Image-Map in the Web Application.</td>
+            <td><a href="../Practical-5/index.html">Practical-5</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>   
+        <tr>
+            <td>6</td>
+            <td>Create following layout using css layout properties.</td>
+            <td><a href="../Practical-6/index.html">Practical-6</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr>  
+        <tr>
+            <td>7</td>
+            <td>Create a Web Page Layout using div tags.</td>
+            <td><a href="../Practical-7/index.html">Practical-7</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr> 
+        <tr>
+            <td>8</td>
+            <td>Create a Web Page having Fixed Navigation Bar with the given content.</td>
+            <td><a href="../Practical-8/index.html">Practical-8</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr> 
+        <tr>
+            <td>9</td>
+            <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+            <td><a href="../Practical-9/index.html">Practical-9</a></td>
+            <td>Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr> 
+        <tr>
+            <td>10</td>
+            <td>Create a Responsive Side-Bar Navigation Menu.</td>
+            <td><a href="../Practical-10/index.html">Practical-10</a></td>
+            <td>Un-Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr> 
+        <tr>
+            <td>11</td>
+            <td>Create a Table that represent Live Practical Book Records.</td>
+            <td><a href="../Practical-11/index.html">Practical-11</a></td>
+            <td>Un-Checked</td>
+            <td><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></td>
+        </tr> 
+    </table>
 </body>
 </html>
