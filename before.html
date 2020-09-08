@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            width:800px;
+            margin:50px auto;
+            position: relative;
+            border: 1px solid red;
+        }
+        .c:after{
+            content: '';
+            position: absolute;
+            width:50%;
+            left:0;
+            height:100%;
+            background: cyan;
+        }
+        .c:before{
+            content: '';
+            position: absolute;
+            width:50%;
+            right:0%;
+            height:100%;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="c"></div>
+</body>
+</html>
