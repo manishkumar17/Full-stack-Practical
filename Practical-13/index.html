@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+
+        }
+        .content{
+            width: 100%;
+            text-align: center;
+            background: white;
+        }
+        .content h1 {
+            line-height: 1.8;
+            font-size: 60px;
+            color: orangered;
+        }
+
+        .content span {
+            color: blue;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            background: rgb(44, 62, 80);
+        }
+        .top-section {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            border-bottom: 1px solid grey;
+        }
+
+        article {
+            width: 40%;
+            text-align: justify;
+            margin: 0 10px 10px 10px;
+        }
+        article p{
+            color: grey;
+        }
+        .links{
+            float: left;
+            width: 80%;
+            justify-content: space-around;
+            display: flex;
+        }
+        aside {
+            width: 230px;
+            float: left;
+            max-height: 400px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        aside ul {
+            display: block;
+        }
+
+        aside ul li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(139, 131, 131);
+            display: block;
+            margin-top: 10px;
+        }
+        a:hover{
+            color: rgb(185, 163, 163);
+        }
+
+        .signup{
+            padding: 30px 0 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid grey;
+        }
+        .signup h1{
+            color: grey;
+            font-size: 30px;
+        }
+        .signup a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 45px;
+            color: white;
+            background: red;
+            margin-left: 15px;
+            font-size: 18px;
+            border-radius: 20px;
+            transition: all 0.3s ease-in;
+        }
+        .signup a:hover{
+            background: orange;
+        }
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .social-icons ul{
+            list-style-type: none;
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 30px;
+        }
+        .social-icons a{
+            padding: 20px;
+            font-size: 30px;
+            width: 80px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            background: rgb(39, 34, 34);
+            transition: all 0.2s ease-in;
+        }
+        .social-icons i{
+            color:white;
+        }
+        .social-icons .facebook-icon:hover{
+            background: #2046af;
+        }
+        .social-icons .twitter-icon:hover{
+            background: cyan;
+        }
+        .social-icons .plus-icon:hover{
+            background: red;
+        }
+        .social-icons .linkedin-icon:hover{
+            background: #2046af;
+        }
+        .social-icons .codepen-icon:hover{
+            background: deeppink;
+        }
+        .copywrite{
+            width: 100%;
+            background: black;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .copywrite h3{
+            width: 70%;
+            text-align: center;
+            color: grey;
+            font-size: 17px;
+            margin-bottom: 20px;
+            font-weight: 200;
+            position: relative;
+        }
+        .copywrite h3::before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 4px;
+            bottom: -10px;
+            background-color: yellow;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        .copywrite h3:hover::before { 
+            visibility: visible;
+            width:525px;
+        }
+        @media screen and (max-width: 970px){
+            .top-section{
+                flex-direction: column;
+            }
+            article{
+                width: 97%;
+            }
+            .links{
+                width: 100%;
+                justify-content: space-between;
+            }
+            aside{
+                width: 35%;
+            }
+            .social-icons a{
+                width: 60px;
+                margin: 10px;
+                font-size: 30px;
+                padding: 10px;
+            }
+            .copywrite h3{
+                width: 95%;
+            }
+            aside:first-child{
+                margin-left: 10px;
+            }
+            aside{
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (max-width: 610px){
+            .links{
+                flex-direction: column;
+                padding: 10px;
+            }
+            aside{
+                width: 90%;
+            }
+            .content h1{
+                font-size: 35px;
+            }
+
+            .social-icons a{
+                width: 50px;
+                margin: 10px;
+                font-size: 25px;
+                padding: 10px;
+            }
+            .copywrite h3{
+                font-size: 13px;
+                width: 300px;
+            }
+            .copywrite h3:hover::before { 
+                visibility: visible;
+                width:90%;
+            }
+            aside{
+                width: 250px;
+            }
+            aside:first-child{
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="content">
+            <h1><span>Responsive</span> Footer</h1>
+        </section>
+        <footer>
+            <section class="top-section">
+                <article>
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur earum nesciunt reprehenderit
+                        enim labore, quas aliquid recusandae minima totam, similique non unde quidem fugit velit!
+                        Explicabo id asperiores sit sapiente, officiis libero aperiam sequi, distinctio iusto laudantium
+                        fugit illum quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident vel
+                        corporis sint laborum sunt animi dolores obcaecati enim commodi voluptates iusto doloremque
+                        doloribus voluptatibus dolor, quidem rerum, nam ut officia aliquid. Unde quaerat sint a commodi
+                        quibusdam ullam voluptatem repudiandae.</p>
+                </article>
+                <section class="links">
+                    <aside class="categories">
+                        <h3>categories</h3>
+                        <ul>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">UI Design</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">Hybrid Apps</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="quick-links">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Contribute</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="contactus">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home"></i> Bhagwati nagar, Tundla,UP</a></li>
+                            <li><a href="mailto:manishky10@gmail.com"><i class="fa fa-envelope"></i>
+                                    manishky10@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone-square"></i> Mobile: 9557291337</a></li>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> Manishchaudhary</a></li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+            <section class="signup">
+                <h1>Register for Free</h1>
+                <a href="#">Sign Up!</a>
+            </section>
+            <section class="social-icons">
+                <ul>
+                    <li><a href="#" class="facebook-icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter-icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="plus-icon"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="linkedin-icon"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" class="codepen-icon"><i class="fa fa-codepen"></i></a></li>
+                </ul>
+            </section>
+            <section class="copywrite">
+                <h3>Copywrite &copy; 2020 All Rights Reserved by Manish Chaudhary</h3>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>
