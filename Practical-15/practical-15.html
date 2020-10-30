@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btns {
+            display: flex;
+            margin: 60px auto;
+            width: 22%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border: 4px solid black;
+            font-size: 30px;
+            outline-style: none;
+        }
+
+        label {
+            font-size: 50px;
+            color: yellow;
+        }
+        .minus:disabled{
+            border: 4px solid rgb(95, 82, 82);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div class="btns">
+            <button class='minus disabled'>-</button>
+            <label for="button">0</label>
+            <button id='plus'>+</button>
+        </div>
+    </div>
+    <script>
+        var minusbtn = document.querySelector('.minus');
+        var plusbtn = document.querySelector('#plus');
+        var counter = document.querySelector('label');
+        minusbtn.disabled = true;
+        count = 0;
+        plusbtn.onclick = function () {
+            count += 1;
+            if(count > 0){
+                minusbtn.disabled = false;
+            }
+            
+            counter.innerHTML = count;
+        };
+        minusbtn.onclick = function () {
+            if (count > 0) {
+                count -= 1;
+            }
+            if(count == 0){
+                minusbtn.disabled = true;
+            }
+            counter.innerHTML = count;
+        };
+    </script>
+</body>
+
+</html>
